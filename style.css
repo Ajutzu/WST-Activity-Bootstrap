@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+
+                                                                                                                                                                       /*Universal*/
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+  --tertiary-color: #eed688;
+}
+
+body {
+  font-family: "Belleza", sans-serif !important;
+}
+
+                                                                                                                                                                       /*Styling in Navbar*/
+
+.cssNav a {
+  font-size: 1rem;
+  color: var(--primary-color) !important;
+  letter-spacing: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.9s ease;
+}
+
+.dropDown {
+  color: var(--tertiary-color) !important;
+}
+
+.topText {
+  letter-spacing: 2px;
+}
+
+.cssNav a:hover {
+  border-bottom: 1px solid var(--tertiary-color) !important;
+  color: var(--tertiary-color) !important;
+}
+
+.myLogo {
+  border-bottom: 1px solid transparent;
+}
+
+                                                                                                                                                                       /*Styling in Carousel Section*/
+
+.myButton {
+  background-color: var(--tertiary-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+.mySecondButton {
+  background-color: transparent !important;
+  border: 2px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.myButton:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+.mySecondButton:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+                                                                                                                                                                       /*Styling in Gallery*/
+
+.card-img-top {
+  height: 40vh;
+  object-fit: cover;
+}
+
+.gallerySection h2 {
+  color: var(--tertiary-color);
+}
+
+.gallerySection i {
+  color: var(--secondary-color) !important;
+  background-color: var(--tertiary-color);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.gallerySection .money {
+  color: var(--primary-color);
+}
+
+.gallerySection .card {
+  background-color: var(--secondary-color) !important;
+}
+
+.gallerySection p {
+  color: var(--primary-color) !important;
+}
+
+                                                                                                                                                                       /*Styling in About*/
+
+.aboutUs {
+  background-color: var(--secondary-color);
+}
+
+.aboutUs h2 {
+  color: var(--tertiary-color) !important;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.aboutUs a {
+  border: 1px solid;
+}
+
+.aboutUs a:hover {
+  border: 1px solid var(--tertiary-color);
+}
+
+                                                                                                                                                                       /*Styling in Contact*/
+
+.contactSection button {
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color);
+}
+
+.contactSection button:hover {
+  border: 1px solid var(--tertiary-color) !important;
+}
+
+                                                                                                                                                                       /* Above 992px Resolution */
+
+@media (min-width: 992px) {
+  section {
+    height: 100vh !important;
+  }
+}
+
+                                                                                                                                                                       /* Below 991px Resolution */
+
+@media (max-width: 991px) {
+  section {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .cssNav a {
+    font-size: 0.5rem !important;
+  }
+}
