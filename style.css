@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 
-                                                                                                                                                                       /*Universal*/
+/*Universal*/
 
 :root {
   --primary-color: white;
@@ -12,7 +12,16 @@ body {
   font-family: "Belleza", sans-serif !important;
 }
 
-                                                                                                                                                                       /*Styling in Navbar*/
+.card {
+  max-height: 50vh;
+  height: 50vh !important;
+}
+
+.card img {
+  max-height: 30vh;
+}
+
+/*Styling in Navbar*/
 
 .cssNav a {
   font-size: 1rem;
@@ -20,6 +29,12 @@ body {
   letter-spacing: 2px;
   border-bottom: 1px solid transparent;
   transition: color 0.9s ease;
+}
+
+.cssNav .mySecondButton:hover {
+  color: var(--primary-color) !important;
+  background-color: transparent !important;
+  border: 2px solid var(--tertiary-color) !important;
 }
 
 .dropDown {
@@ -39,7 +54,28 @@ body {
   border-bottom: 1px solid transparent;
 }
 
-                                                                                                                                                                       /*Styling in Carousel Section*/
+/*Styling in Hero Section*/
+
+.heroSection {
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    color: white; 
+    animation: changeBackground 10s ease-in-out infinite; 
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('Images/carouselOne.png'); /
+    }
+    50% {
+        background-image: url('Images/carouselTwo.png'); 
+    }
+    100% {
+        background-image: url('Images/carouselThree.png'); 
+    }
+}
 
 .myButton {
   background-color: var(--tertiary-color) !important;
@@ -62,7 +98,7 @@ body {
   color: var(--secondary-color) !important;
 }
 
-                                                                                                                                                                       /*Styling in Gallery*/
+/*Styling in Gallery*/
 
 .card-img-top {
   height: 40vh;
@@ -92,7 +128,7 @@ body {
   color: var(--primary-color) !important;
 }
 
-                                                                                                                                                                       /*Styling in About*/
+/*Styling in About*/
 
 .aboutUs {
   background-color: var(--secondary-color);
@@ -112,7 +148,7 @@ body {
   border: 1px solid var(--tertiary-color);
 }
 
-                                                                                                                                                                       /*Styling in Contact*/
+/*Styling in Contact*/
 
 .contactSection button {
   border: 1px solid var(--primary-color) !important;
@@ -123,7 +159,7 @@ body {
   border: 1px solid var(--tertiary-color) !important;
 }
 
-                                                                                                                                                                       /* Above 992px Resolution */
+/* Above 992px Resolution */
 
 @media (min-width: 992px) {
   section {
@@ -131,11 +167,35 @@ body {
   }
 }
 
-                                                                                                                                                                       /* Below 991px Resolution */
+/* Below 991px Resolution */
 
 @media (max-width: 991px) {
   section {
     height: auto !important;
+  }
+
+  #hero {
+    padding: 40px;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .card {
+    max-height: 40vh;
+    height: 40vh !important;
+  }
+
+  #features .card img {
+    max-height: 20vh !important;
+    height: 18vh !important;
+    object-fit: cover;
+
+  }
+
+  .card img {
+    max-height: 20vh !important;
+    object-fit: cover;
   }
 }
 
