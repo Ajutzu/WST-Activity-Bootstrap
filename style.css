@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 
-/*Universal*/
+                                                                                                                                                                            /*Universal*/
 
 :root {
   --primary-color: white;
@@ -21,7 +21,7 @@ body {
   max-height: 30vh;
 }
 
-/*Styling in Navbar*/
+                                                                                                                                                                            /*Styling in Navbar*/
 
 .cssNav a {
   font-size: 1rem;
@@ -54,7 +54,7 @@ body {
   border-bottom: 1px solid transparent;
 }
 
-/*Styling in Hero Section*/
+                                                                                                                                                                            /*Styling in Hero Section*/
 
 .heroSection {
     background-size: cover; 
@@ -98,7 +98,7 @@ body {
   color: var(--secondary-color) !important;
 }
 
-/*Styling in Gallery*/
+                                                                                                                                                                            /*Styling in Gallery*/
 
 .card-img-top {
   height: 40vh;
@@ -128,7 +128,7 @@ body {
   color: var(--primary-color) !important;
 }
 
-/*Styling in About*/
+                                                                                                                                                                            /*Styling in About*/
 
 .aboutUs {
   background-color: var(--secondary-color);
@@ -152,7 +152,7 @@ body {
   height: 8vh;
 }
 
-/*Styling in Contact*/
+                                                                                                                                                                            /*Styling in Contact*/
 
 .contactSection button {
   border: 1px solid var(--primary-color) !important;
@@ -163,7 +163,7 @@ body {
   border: 1px solid var(--tertiary-color) !important;
 }
 
-/* Above 992px Resolution */
+                                                                                                                                                                            /* Above 992px Resolution */
 
 @media (min-width: 992px) {
   section {
@@ -171,7 +171,7 @@ body {
   }
 }
 
-/* Below 991px Resolution */
+                                                                                                                                                                            /* Below 991px Resolution */
 
 @media (max-width: 991px) {
   section {
